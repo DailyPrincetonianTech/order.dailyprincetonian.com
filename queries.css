@@ -1,0 +1,176 @@
+/* Extra large devices (large laptops and desktops) */
+@media only screen and (max-width: 1200px) {
+    .scroll--container:first-of-type {
+        margin-right: 0px;
+    }
+
+    .scroll--container:last-of-type {
+        margin-left: 0px;
+    }
+    
+    .form {
+        padding: 20px;
+        width: 225px;
+        font-size: 18px;
+    }
+}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (max-width: 992px) {
+    @-webkit-keyframes scrollGood {
+        0% {
+            -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(-25px, -945px, 0);
+            transform: translate3d(-25px, -945px, 0);
+        }
+    }
+    @keyframes scrollGood {
+        0% {
+            -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(-25px, -945px, 0);
+            transform: translate3d(-25px, -945px, 0);
+        }
+    }
+
+    @-webkit-keyframes scrollGood-2 {
+        0% {
+            -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(-25px, -450px, 0);
+            transform: translate3d(-25px, -450px, 0);
+        }
+    }
+    @keyframes scrollGood-2 {
+        0% {
+            -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(-25px, -450px, 0);
+            transform: translate3d(-25px, -450px, 0);
+        }
+    }
+    
+    .scroll--container {
+        width: 450px;
+    }
+
+    .scroll--frosh {
+        height: 1890px;
+        width: 450px;
+    }
+
+    .scroll--commencement {
+        height: 900;
+        width: 450px;
+    }
+    
+    .header {
+        font-size: 28px;
+    }
+    
+}
+
+/* Medium devices (landscape tablets) */
+@media only screen and (max-width: 768px) {
+
+    .form--side {
+        display: none;
+    }
+    
+    .form--under {
+        display: flex;
+        height: 250px;
+        width: 500px;
+        padding: 20px;
+        margin: 20px 0 20px 0;
+    }
+
+    .header {
+        font-size: 24px;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones */
+@media only screen and (max-width: 600px) {    
+    .form--under {
+        display: flex;
+        height: 250px;
+        width: 300px;
+        padding: 20px;
+        margin: 10px 0 10px 0;
+    }
+
+    .header {
+        font-size: 14px;
+    }
+    
+    @-webkit-keyframes scrollGood {
+        0% {
+            -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(-25px, -630px, 0);
+            transform: translate3d(-25px, -630px, 0);
+        }
+    }
+    @keyframes scrollGood {
+        0% {
+            -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(-25px, -630px, 0);
+            transform: translate3d(-25px, -630px, 0);
+        }
+    }
+
+    @-webkit-keyframes scrollGood-2 {
+        0% {
+            -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(-25px, -300px, 0);
+            transform: translate3d(-25px, -300px, 0);
+        }
+    }
+    @keyframes scrollGood-2 {
+        0% {
+            -webkit-transform: translate3d(-25px, 0, 0);
+            transform: translate3d(-25px, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(-25px, -300px, 0);
+            transform: translate3d(-25px, -300px, 0);
+        }
+    }
+    
+    .scroll--container {
+        width: 300px;
+    }
+
+    .scroll--frosh {
+        height: 1260px;
+        width: 300px;
+    }
+
+    .scroll--commencement {
+        height: 600;
+        width: 300px;
+    }
+}
+
+
+
+
