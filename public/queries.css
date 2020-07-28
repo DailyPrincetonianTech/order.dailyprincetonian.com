@@ -19,43 +19,43 @@
 @media only screen and (max-width: 992px) {
     @-webkit-keyframes scrollGood {
         0% {
-            -webkit-transform: translate3d(-25px, 0, 0);
-            transform: translate3d(-25px, 0, 0);
+            -webkit-transform: translate3d(-25px, -20px, 0);
+            transform: translate3d(-25px, -20px, 0);
         }
         100% {
-            -webkit-transform: translate3d(-25px, -945px, 0);
-            transform: translate3d(-25px, -945px, 0);
+            -webkit-transform: translate3d(-25px, -965px, 0);
+            transform: translate3d(-25px, -965px, 0);
         }
     }
     @keyframes scrollGood {
         0% {
-            -webkit-transform: translate3d(-25px, 0, 0);
-            transform: translate3d(-25px, 0, 0);
+            -webkit-transform: translate3d(-25px, -20px, 0);
+            transform: translate3d(-25px, -20px, 0);
         }
         100% {
-            -webkit-transform: translate3d(-25px, -945px, 0);
-            transform: translate3d(-25px, -945px, 0);
+            -webkit-transform: translate3d(-25px, -965px, 0);
+            transform: translate3d(-25px, -965px, 0);
         }
     }
 
     @-webkit-keyframes scrollGood-2 {
         0% {
-            -webkit-transform: translate3d(-25px, 0, 0);
-            transform: translate3d(-25px, 0, 0);
+            -webkit-transform: translate3d(-25px, -20px, 0);
+            transform: translate3d(-25px, -20px, 0);
         }
         100% {
-            -webkit-transform: translate3d(-25px, -450px, 0);
-            transform: translate3d(-25px, -450px, 0);
+            -webkit-transform: translate3d(-25px, -470px, 0);
+            transform: translate3d(-25px, -470px, 0);
         }
     }
     @keyframes scrollGood-2 {
         0% {
-            -webkit-transform: translate3d(-25px, 0, 0);
-            transform: translate3d(-25px, 0, 0);
+            -webkit-transform: translate3d(-25px, -20px, 0);
+            transform: translate3d(-25px, -20px, 0);
         }
         100% {
-            -webkit-transform: translate3d(-25px, -450px, 0);
-            transform: translate3d(-25px, -450px, 0);
+            -webkit-transform: translate3d(-25px, -470px, 0);
+            transform: translate3d(-25px, -470px, 0);
         }
     }
     
@@ -116,43 +116,43 @@
     
     @-webkit-keyframes scrollGood {
         0% {
-            -webkit-transform: translate3d(-25px, 0, 0);
-            transform: translate3d(-25px, 0, 0);
+            -webkit-transform: translate3d(-25px, -20px, 0);
+            transform: translate3d(-25px, -20px, 0);
         }
         100% {
-            -webkit-transform: translate3d(-25px, -630px, 0);
-            transform: translate3d(-25px, -630px, 0);
+            -webkit-transform: translate3d(-25px, -650px, 0);
+            transform: translate3d(-25px, -650px, 0);
         }
     }
     @keyframes scrollGood {
         0% {
-            -webkit-transform: translate3d(-25px, 0, 0);
-            transform: translate3d(-25px, 0, 0);
+            -webkit-transform: translate3d(-25px, -20px, 0);
+            transform: translate3d(-25px, -20px, 0);
         }
         100% {
-            -webkit-transform: translate3d(-25px, -630px, 0);
-            transform: translate3d(-25px, -630px, 0);
+            -webkit-transform: translate3d(-25px, -650px, 0);
+            transform: translate3d(-25px, -650px, 0);
         }
     }
 
     @-webkit-keyframes scrollGood-2 {
         0% {
-            -webkit-transform: translate3d(-25px, 0, 0);
-            transform: translate3d(-25px, 0, 0);
+            -webkit-transform: translate3d(-25px, -20px, 0);
+            transform: translate3d(-25px, -20px, 0);
         }
         100% {
-            -webkit-transform: translate3d(-25px, -300px, 0);
-            transform: translate3d(-25px, -300px, 0);
+            -webkit-transform: translate3d(-25px, -320px, 0);
+            transform: translate3d(-25px, -320px, 0);
         }
     }
     @keyframes scrollGood-2 {
         0% {
-            -webkit-transform: translate3d(-25px, 0, 0);
-            transform: translate3d(-25px, 0, 0);
+            -webkit-transform: translate3d(-25px, -20px, 0);
+            transform: translate3d(-25px, -20px, 0);
         }
         100% {
-            -webkit-transform: translate3d(-25px, -300px, 0);
-            transform: translate3d(-25px, -300px, 0);
+            -webkit-transform: translate3d(-25px, -320px, 0);
+            transform: translate3d(-25px, -320px, 0);
         }
     }
     
