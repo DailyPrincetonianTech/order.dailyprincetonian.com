@@ -36,7 +36,7 @@
                 <br><br>
                 Celebrate with this fantastic issue all about you.
                 <br><br>
-                <button id="myBtn-1">ORDER NOW</button>
+                <button id="myBtn-3">ORDER NOW</button>
             </div>
             <div class="panel">
                 <div class="form form--side">
@@ -59,7 +59,7 @@
                 <br><br>
                 Remember our orange bubble as you take on the world.
                 <br><br>
-                <button id="myBtn-2">ORDER NOW</button>
+                <button id="myBtn-4">ORDER NOW</button>
             </div>
         </div>
         
@@ -163,6 +163,9 @@
         // Get the open button
         var btnOpen1 = document.getElementById("myBtn-1");
         var btnOpen2 = document.getElementById("myBtn-2");
+        var btnOpen3 = document.getElementById("myBtn-3");
+        var btnOpen4 = document.getElementById("myBtn-4");
+            
 
         // Get the close button
         var btnClose1 = document.getElementById("closeModal-1");
@@ -177,6 +180,21 @@
             }, 100);
         }
         btnOpen2.onclick = function() {
+            modal2.className = "Modal is-visuallyHidden";
+            setTimeout(function() {
+              body.className = "MainContainer is-blurred";
+              modal2.className = "Modal";
+            }, 100);
+        }
+        btnOpen3.onclick = function() {
+            console.log("Here");
+            modal1.className = "Modal is-visuallyHidden";
+            setTimeout(function() {
+              body.className = "MainContainer is-blurred";
+              modal1.className = "Modal";
+            }, 100);
+        }
+        btnOpen4.onclick = function() {
             modal2.className = "Modal is-visuallyHidden";
             setTimeout(function() {
               body.className = "MainContainer is-blurred";
