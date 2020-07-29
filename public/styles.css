@@ -5,7 +5,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: #FFF;
+}
+
+.section {
+    padding: 100px 50px 100px 50px;
+}
+
+a {
+    text-decoration: none;
 }
 
 @-webkit-keyframes scrollGood {
@@ -71,6 +78,17 @@
     justify-content: center;
 }
 
+.panel--sm {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 .panel {
     display: flex;
     justify-content: space-between;
@@ -103,6 +121,10 @@
     text-transform: uppercase;
 }
 
+button:hover {
+    background-color: #bc5e29;
+}
+
 button {
     color: #FFF;
     font-weight: 500;
@@ -110,6 +132,7 @@ button {
     border: none;
     border-radius: 5px;
     padding: 10px;
+    transition: background-color 0.5s;
 }
 
 .scroll--container {
@@ -127,6 +150,16 @@ button {
 
 .scroll--container:last-of-type {
     margin-left: 50px;
+}
+
+.scroll--container button {
+    position: relative;
+    margin: 0px;
+    top: 50%;
+    left: 37%;
+    transform: translate(0, 250%);
+    display: none;
+    z-index: 999;
 }
 
 .scroll--frosh {
@@ -198,5 +231,89 @@ button {
 .is-blurred {
   filter: blur(2px);
   -webkit-filter: blur(2px);
+}
+
+/**************************************************************
+ *  FOOTER
+ *************************************************************/
+
+.footer {
+    background-color: #000;
+    color: #FFF;
+    margin-top: 50px;
+}
+
+.footer--row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer--logo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer--row img {
+    height: 200px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-right: 1px solid #FFF;
+    margin-right: 50px;
+}
+
+.footer--button {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #E1712F;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.footer--button a {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer ul {
+    list-style-type: none;
+    line-height: 1.5;
+    margin-right: 50px;
+}
+
+.footer ul img {
+    height: 15px;
+    filter: invert(100%);
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.footer ul img:hover {
+    filter: invert(75%);
+}
+
+.footer li a {
+    font-size: 15px;
+    color: #FFF;
+}
+
+.footer li b a {
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFF;
+}
+
+.footer li a:hover {
+    color: #E0E0E0;
+}
+
+.footer li b a:hover {
+    color: #E0E0E0;
 }
 
