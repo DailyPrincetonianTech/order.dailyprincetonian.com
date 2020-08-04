@@ -233,6 +233,14 @@ button {
   -webkit-filter: blur(2px);
 }
 
+.google--form {
+    background-color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
 /**************************************************************
  *  FOOTER
  *************************************************************/
@@ -240,7 +248,6 @@ button {
 .footer {
     background-color: #000;
     color: #FFF;
-    margin-top: 50px;
 }
 
 .footer--row {
