@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>  
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel=“stylesheet” href=“https://use.typekit.net/gkx8zdh.css”>
@@ -56,7 +56,7 @@
                     <button id="scroll--commencement--btn">ORDER NOW</button>
                     <div class="scroll--commencement"></div>
                 </div>
-            </div> 
+            </div>
             <div class="form form--under">
                 <span class="orange">Commencement<br>$20.20</span>
                 <br>
@@ -66,8 +66,32 @@
                 <br><br>
                 <button id="myBtn-4">ORDER NOW</button>
             </div>
+            <div class="panel">
+                <div class="scroll--container" id="scroll--container-3">
+                    <button id="scroll--fall--btn">ORDER NOW</button>
+                    <div class="scroll--fall"></div>
+                </div>
+                <div class="form form--side">
+                    <span class="orange">Fall<br>$45.00</span>
+                    <br>
+                    Stay Connected.
+                    <br><br>
+                    We will bring Princeton to you with three special issues, released monthly.
+                    <br><br>
+                    <button id="myBtn-5">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="form form--under">
+                <span class="orange">Fall<br>$45.00</span>
+                <br>
+                Stay Connected.
+                <br><br>
+                We will bring Princeton to you with three special issues, released monthly.
+                <br><br>
+                <button id="myBtn-6">ORDER NOW</button>
+            </div>
         </div>
-        
+
         <div id="myModal-1" class="Modal is-hidden is-visuallyHidden">
           <!-- Modal content -->
           <div class="Modal-content">
@@ -77,7 +101,7 @@
             <div id="paypal-button-container-1"></div>
           </div>
         </div>
-        
+
         <div id="myModal-2" class="Modal is-hidden is-visuallyHidden">
           <!-- Modal content -->
           <div class="Modal-content">
@@ -87,12 +111,17 @@
             <div id="paypal-button-container-2"></div>
           </div>
         </div>
-        
-        <div class="google--form">
-            <!-- GOOGLE FORM -->
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9jY1CkObqm8gVA4CRaOvDsae9wCdlPBjw0vr_9Xv8Fhd5Mw/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+        <div id="myModal-3" class="Modal is-hidden is-visuallyHidden">
+          <!-- Modal content -->
+          <div class="Modal-content">
+            <span id="closeModal-3" class="Close">&times;</span>
+            <h4>Fall Issue</h4>
+            <br>
+            <div id="paypal-button-container-3"></div>
+          </div>
         </div>
-        
+
         <!-- FOOTER    -->
         <div class="footer section">
             <div class="footer--row">
@@ -156,8 +185,8 @@
                 </ul>
             </div>
         </div>
-        
-        
+
+
         <script src="https://www.paypal.com/sdk/js?client-id=AeiJZG5XN-aJrlY7i94_IPWTQkzNwQze_KPb-5uNuvp4Lrh4SwAn4BwqYGFOmPg7TTN8NXf-K51_Qwqc&currency=USD" data-sdk-integration-source="button-factory"></script>
         <script>
             paypal.Buttons({
@@ -204,33 +233,35 @@
                     });
                 }
             }).render('#paypal-button-container-2');
-        </script>
-        
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-             https://firebase.google.com/docs/web/setup#available-libraries -->
-
-        <script>
-          // Your web app's Firebase configuration
-          var firebaseConfig = {
-            apiKey: "AIzaSyBhAcbfUH1hH2Mcb7FQnB2sehwTfC3EWwI",
-            authDomain: "dailyprincetonian-db9f6.firebaseapp.com",
-            databaseURL: "https://dailyprincetonian-db9f6.firebaseio.com",
-            projectId: "dailyprincetonian-db9f6",
-            storageBucket: "dailyprincetonian-db9f6.appspot.com",
-            messagingSenderId: "371819588105",
-            appId: "1:371819588105:web:02ecb194a1ccdc628126d8"
-          };
-          // Initialize Firebase
-          firebase.initializeApp(firebaseConfig);
+            paypal.Buttons({
+                style: {
+                    shape: 'rect',
+                    color: 'silver',
+                    layout: 'vertical',
+                    label: 'paypal',
+                },
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: '45.00'
+                            }
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                    });
+                }
+            }).render('#paypal-button-container-3');
         </script>
 
         <script>
         // Get the modal
         var modal1 = document.getElementById('myModal-1');
         var modal2 = document.getElementById('myModal-2');
+        var modal3 = document.getElementById('myModal-3');
 
         // Get the main container and the body
         var body = document.getElementsByTagName('body');
@@ -240,13 +271,17 @@
         var btnOpen2 = document.getElementById("myBtn-2");
         var btnOpen3 = document.getElementById("myBtn-3");
         var btnOpen4 = document.getElementById("myBtn-4");
+        var btnOpen5fall = document.getElementById("myBtn-5");
+        var btnOpen6fall = document.getElementById("myBtn-6");
         var btnOpen5 = document.getElementById("scroll--frosh--btn");
         var btnOpen6 = document.getElementById("scroll--commencement--btn");
-            
+        var btnOpen7fall = document.getElementById("scroll--fall--btn");
+
 
         // Get the close button
         var btnClose1 = document.getElementById("closeModal-1");
-        var btnClose2 = document.getElementById("closeModal-2");    
+        var btnClose2 = document.getElementById("closeModal-2");
+        var btnClose3 = document.getElementById("closeModal-3");
 
         // Open the modal
         btnOpen1.onclick = function() {
@@ -295,6 +330,34 @@
             }, 100);
         }
 
+        // FALL ISSUE
+        btnOpen5fall.onclick = function() {
+            console.log("Here");
+            modal3.className = "Modal is-visuallyHidden";
+            setTimeout(function() {
+              body.className = "MainContainer is-blurred";
+              modal3.className = "Modal";
+            }, 100);
+        }
+
+        btnOpen6fall.onclick = function() {
+            console.log("Here");
+            modal3.className = "Modal is-visuallyHidden";
+            setTimeout(function() {
+              body.className = "MainContainer is-blurred";
+              modal3.className = "Modal";
+            }, 100);
+        }
+
+        btnOpen7fall.onclick = function() {
+            console.log("Here");
+            modal3.className = "Modal is-visuallyHidden";
+            setTimeout(function() {
+              body.className = "MainContainer is-blurred";
+              modal3.className = "Modal";
+            }, 100);
+        }
+
         // Close the modal
         btnClose1.onclick = function() {
             modal1.className = "Modal is-hidden is-visuallyHidden";
@@ -302,6 +365,10 @@
         }
         btnClose2.onclick = function() {
             modal2.className = "Modal is-hidden is-visuallyHidden";
+            body.className = "";
+        }
+        btnClose3.onclick = function() {
+            modal3.className = "Modal is-hidden is-visuallyHidden";
             body.className = "";
         }
 
@@ -315,11 +382,16 @@
                 modal2.className = "Modal is-hidden";
                 body.className = "";
             }
+            if (event.target == modal3) {
+                modal3.className = "Modal is-hidden";
+                body.className = "";
+            }
         }
-        
-        
+
+
         var froshScroll = document.getElementById("scroll--container-1");
-        var commencementScroll = document.getElementById("scroll--container-2");  
+        var commencementScroll = document.getElementById("scroll--container-2");
+        var fallScroll = document.getElementById("scroll--container-3");
         froshScroll.onmouseover = function(){
             var froshScrollBtn = document.getElementById("scroll--frosh--btn");
             froshScrollBtn.style.display = "inline-block";
@@ -332,16 +404,27 @@
             document.getElementsByClassName("scroll--commencement")[0].style.animation = 'none';
             document.getElementsByClassName("scroll--commencement")[0].style.transform = 'translate3d(-25px, -70px, 0)';
         };
+        fallScroll.onmouseover = function(){
+            var fallScrollBtn = document.getElementById("scroll--fall--btn");
+            fallScrollBtn.style.display = "inline-block";
+            document.getElementsByClassName("scroll--fall")[0].style.animation = 'none';
+            document.getElementsByClassName("scroll--fall")[0].style.transform = 'translate3d(-25px, -70px, 0)';
+        };
         froshScroll.onmouseout = function(){
             var froshScrollBtn = document.getElementById("scroll--frosh--btn");
             froshScrollBtn.style.display = "none";
             document.getElementsByClassName("scroll--frosh")[0].style.animation = 'scrollGood 20s linear infinite';
-            
+
         };
         commencementScroll.onmouseout = function(){
             var commencementScrollBtn = document.getElementById("scroll--commencement--btn");
             commencementScrollBtn.style.display = "none";
                         document.getElementsByClassName("scroll--commencement")[0].style.animation = 'scrollGood-2 10s linear infinite';
+        };
+        fallScroll.onmouseout = function(){
+            var fallScrollBtn = document.getElementById("scroll--fall--btn");
+            fallScrollBtn.style.display = "none";
+                        document.getElementsByClassName("scroll--fall")[0].style.animation = 'scrollGood-2 10s linear infinite';
         };
         </script>
     </body>

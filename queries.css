@@ -7,18 +7,18 @@
     .scroll--container:last-of-type {
         margin-left: 0px;
     }
-    
+
     .form {
         padding: 20px;
         width: 225px;
         font-size: 18px;
     }
-    
+
     /* FOOTER */
     .footer ul {
         margin-right: 20px;
     }
-    
+
     .footer--row img {
         height: 100px;
     }
@@ -67,7 +67,7 @@
             transform: translate3d(-25px, -470px, 0);
         }
     }
-    
+
     .scroll--container {
         width: 450px;
     }
@@ -81,20 +81,25 @@
         height: 900;
         width: 450px;
     }
-    
+
+    .scroll--fall {
+        height: 900;
+        width: 450px;
+    }
+
     .header {
         font-size: 28px;
     }
-    
+
     /* FOOTER */
     .footer--logo {
         display: none;
     }
-    
+
     .scroll--container button {
         left: 30%;
     }
-    
+
 }
 
 /* Medium devices (landscape tablets) */
@@ -103,7 +108,7 @@
     .form--side {
         display: none;
     }
-    
+
     .form--under {
         display: flex;
         height: 250px;
@@ -115,7 +120,7 @@
     .header {
         font-size: 24px;
     }
-    
+
     .footer--button a {
         font-size: 12px;
     }
@@ -131,15 +136,15 @@
     .footer li b a {
         font-size: 12px;
     }
-    
+
     .footer ul img {
         height: 12px;
     }
-    
+
 }
 
 /* Small devices (portrait tablets and large phones */
-@media only screen and (max-width: 600px) {    
+@media only screen and (max-width: 600px) {
     .form--under {
         display: flex;
         height: 250px;
@@ -151,7 +156,7 @@
     .header {
         font-size: 14px;
     }
-    
+
     @-webkit-keyframes scrollGood {
         0% {
             -webkit-transform: translate3d(-25px, -20px, 0);
@@ -193,7 +198,7 @@
             transform: translate3d(-25px, -320px, 0);
         }
     }
-    
+
     .scroll--container {
         width: 300px;
     }
@@ -207,15 +212,20 @@
         height: 600;
         width: 300px;
     }
-    
+
+    .scroll--fall {
+        height: 600;
+        width: 300px;
+    }
+
     .section {
         padding: 30px;
     }
-    
+
     .footer ul {
         line-height: 1;
     }
-    
+
     .footer li {
         float: left;
         margin: 5px;
@@ -224,12 +234,8 @@
     .footer--break {
         display: block;
     }
-    
+
     .scroll--container button {
         left: 17%;
     }
 }
-
-
-
-

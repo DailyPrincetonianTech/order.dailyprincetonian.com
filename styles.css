@@ -15,6 +15,11 @@ a {
     text-decoration: none;
 }
 
+.semibold {
+    font-weight: 600;
+    display: inline-block;
+}
+
 @-webkit-keyframes scrollGood {
     0% {
         -webkit-transform: translate3d(-25px, -20px, 0);
@@ -66,7 +71,7 @@ a {
     font-size: 36px;
     font-weight: 600;
     color: #FFF;
-    
+
     position: relative;
     z-index: 989;
 }
@@ -176,6 +181,18 @@ button {
 
 .scroll--commencement {
     background-image: url(Commencement.png);
+    background-position: right top;
+    background-size: 100%;
+    opacity: 0.3;
+    height: 1500px;
+    width: 750px;
+    z-index: 986;
+    -webkit-animation: scrollGood-2 10s linear infinite;
+    animation: scrollGood-2 10s linear infinite;
+}
+
+.scroll--fall {
+    background-image: url(Fall.png);
     background-position: right top;
     background-size: 100%;
     opacity: 0.3;
@@ -323,4 +340,3 @@ button {
 .footer li b a:hover {
     color: #E0E0E0;
 }
-
