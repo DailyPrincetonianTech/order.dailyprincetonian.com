@@ -15,6 +15,11 @@ a {
     text-decoration: none;
 }
 
+b {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
 .semibold {
     font-weight: 600;
     display: inline-block;
