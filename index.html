@@ -12,7 +12,7 @@
 <body>
     <div class="navbar">
         <div class="navitem banner"><img src="banner.png"></div>
-        <div class="navitem"><a href="#">Order Commencement Issue</a></div>
+        <div class="navitem"><a id="myBtn2" href="#">Order Commencement Issue</a></div>
         <div class="navitem"><a href="https://subscribe.dailyprincetonian.com/">Subscribe to Newsletter</a></div>
         <div class="navitem"><a href="https://www.dailyprincetonian.com/">Read the 'Prince'</a></div>
     </div>
@@ -24,7 +24,7 @@
         <div class="pane">
             <p style="color:#e87723;text-transform: uppercase;font-weight: bold;">2021 Commencement Issue</p>
             <p>Commemorate your graduate's four years with this special issue.</p>
-            <a id="myBtn" href="#">Order Now</a>
+            <a id="myBtn1" href="#">Order Now</a>
         </div>
     </div>
 
@@ -72,13 +72,22 @@
         var body = document.getElementsByTagName('body');
 
         // Get the open button
-        var btnOpen = document.getElementById("myBtn");
+        var btnOpen1 = document.getElementById("myBtn");
+        var btnOpen2 = document.getElementById("myBtn");
 
         // Get the close button
         var btnClose = document.getElementById("closeModal");
 
         // Open the modal
-        btnOpen.onclick = function() {
+        btnOpen1.onclick = function() {
+            modal.className = "Modal is-visuallyHidden";
+            setTimeout(function() {
+                body.className = "MainContainer is-blurred";
+                modal.className = "Modal";
+            }, 100);
+        }
+
+        btnOpen2.onclick = function() {
             modal.className = "Modal is-visuallyHidden";
             setTimeout(function() {
                 body.className = "MainContainer is-blurred";
