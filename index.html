@@ -10,6 +10,95 @@
     <title>Order Special Issues | The Princetonian</title>
 </head>
 <body>
+    <div class="navbar">
+        <div class="navitem banner"><img src="banner.png"></div>
+        <div class="navitem"><a href="#">Order Commencement Issue</a></div>
+        <div class="navitem"><a href="https://subscribe.dailyprincetonian.com/">Subscribe to Newsletter</a></div>
+        <div class="navitem"><a href="https://www.dailyprincetonian.com/">Read the 'Prince'</a></div>
+    </div>
 
+    <div class="content">
+        <div class="pane">
+            <img src="pile.png">
+        </div>
+        <div class="pane">
+            <p style="color:#e87723;text-transform: uppercase;font-weight: bold;">2021 Commencement Issue</p>
+            <p>Commemorate your graduate's four years with this special issue.</p>
+            <a id="myBtn" href="#">Order Now</a>
+        </div>
+    </div>
+
+    <div id="myModal" class="Modal is-hidden is-visuallyHidden">
+        <!-- Modal content -->
+        <div class="Modal-content">
+            <span id="closeModal" class="Close">&times;</span>
+            <h4>Commencement Issue</h4>
+            <br>
+            <div id="paypal-button"></div>
+        </div>
+    </div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=AeiJZG5XN-aJrlY7i94_IPWTQkzNwQze_KPb-5uNuvp4Lrh4SwAn4BwqYGFOmPg7TTN8NXf-K51_Qwqc&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script>
+        paypal.Buttons({
+            style: {
+                shape: 'rect',
+                color: 'silver',
+                layout: 'vertical',
+                label: 'paypal',
+            },
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '18.00'
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                });
+            }
+        }).render('#paypal-button');
+
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the main container and the body
+        var body = document.getElementsByTagName('body');
+
+        // Get the open button
+        var btnOpen = document.getElementById("myBtn");
+
+        // Get the close button
+        var btnClose = document.getElementById("closeModal");
+
+        // Open the modal
+        btnOpen.onclick = function() {
+            modal.className = "Modal is-visuallyHidden";
+            setTimeout(function() {
+                body.className = "MainContainer is-blurred";
+                modal.className = "Modal";
+            }, 100);
+        }
+
+        // Close the modal
+        btnClose.onclick = function() {
+            modal.className = "Modal is-hidden is-visuallyHidden";
+            body.className = "";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.className = "Modal is-hidden";
+                body.className = "";
+            }
+        }
+    </script>
 </body>
 </html>
