@@ -77,12 +77,8 @@ body {
     width: 55%;
 }
 
-.pane img {
-    width: 100%;
-}
-
 img.smaller {
-    width: 50%;
+    height: 600px
 }
 
 .pane a {
