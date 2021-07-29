@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,22 +10,29 @@
     <link rel="icon" href="logo.png" type="image/gif">
     <title>Order Special Issues | The Princetonian</title>
 </head>
+
 <body>
     <div class="navbar">
         <div class="navitem banner"><img src="banner.png"></div>
-        <div class="navitem"><a id="myBtn2" href="#">Order Commencement Issue</a></div>
+        <!-- <div class="navitem"><a id="myBtn2" href="#">Order Commencement Issue</a></div> -->
         <div class="navitem"><a href="https://subscribe.dailyprincetonian.com/">Subscribe to Newsletter</a></div>
         <div class="navitem"><a href="https://www.dailyprincetonian.com/">Read the 'Prince'</a></div>
     </div>
 
     <div class="content">
         <div class="pane">
-            <img src="pile.png">
+            <div class="images">
+                <img src="1901crewneck.png">
+                <img src="tote.png">    
+            </div>
         </div>
         <div class="pane">
-            <p style="color:#e87723;text-transform: uppercase;font-weight: bold;">2021 Commencement Issue</p>
-            <p>Commemorate your graduate's four years with this special issue.</p>
-            <a id="myBtn1" href="#">Order Now</a>
+            <p style="color:#e87723;text-transform: uppercase;font-weight: bold;">1901 NAMEPLATE EDITION CREWNECK AND
+                TOTE</p>
+            <p>Until August 15th, the ‘Prince’ will be accepting orders for our 1901 Edition crewneck and tote. The
+                design dates back to The Daily Princetonian nameplate that was introduced on May 11th, 1901. At the
+                time, a copy of the print paper cost three cents.</p>
+            <a href="/gear">Order Now</a>
         </div>
     </div>
 
@@ -38,77 +46,6 @@
             <div id="paypal-button"></div>
         </div>
     </div>
-
-    <script src="https://www.paypal.com/sdk/js?client-id=AeiJZG5XN-aJrlY7i94_IPWTQkzNwQze_KPb-5uNuvp4Lrh4SwAn4BwqYGFOmPg7TTN8NXf-K51_Qwqc&currency=USD" data-sdk-integration-source="button-factory"></script>
-    <script>
-        paypal.Buttons({
-            style: {
-                shape: 'rect',
-                color: 'silver',
-                layout: 'vertical',
-                label: 'paypal',
-            },
-            createOrder: function(data, actions) {
-                return actions.order.create({
-                    purchase_units: [{
-                        amount: {
-                            value: '20.21'
-                        }
-                    }]
-                });
-            },
-            onApprove: function(data, actions) {
-                return actions.order.capture().then(function(details) {
-                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                });
-            }
-        }).render('#paypal-button');
-
-    </script>
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the main container and the body
-        var body = document.getElementsByTagName('body');
-
-        // Get the open button
-        var btnOpen1 = document.getElementById("myBtn1");
-        var btnOpen2 = document.getElementById("myBtn2");
-
-        // Get the close button
-        var btnClose = document.getElementById("closeModal");
-
-        // Open the modal
-        btnOpen1.onclick = function() {
-            modal.className = "Modal is-visuallyHidden";
-            setTimeout(function() {
-                body.className = "MainContainer is-blurred";
-                modal.className = "Modal";
-            }, 100);
-        }
-
-        btnOpen2.onclick = function() {
-            modal.className = "Modal is-visuallyHidden";
-            setTimeout(function() {
-                body.className = "MainContainer is-blurred";
-                modal.className = "Modal";
-            }, 100);
-        }
-
-        // Close the modal
-        btnClose.onclick = function() {
-            modal.className = "Modal is-hidden is-visuallyHidden";
-            body.className = "";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.className = "Modal is-hidden";
-                body.className = "";
-            }
-        }
-    </script>
 </body>
+
 </html>
