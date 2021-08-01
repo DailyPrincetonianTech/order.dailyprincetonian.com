@@ -25,7 +25,7 @@ export default function GearItem(props: GearItemProps) {
                     Order Now
                 </button>
                 {buttonText !== undefined &&
-                    <a role="button" className="btn btn-secondary text-uppercase text-nowrap" href={buttonHref}>
+                    <a role="button" className="btn btn-secondary text-uppercase text-nowrap" href={buttonHref}target="_blank" rel="noopener noreferrer">
                         {buttonText}
                     </a>
                 }
