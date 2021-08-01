@@ -1,5 +1,6 @@
 {
   "name": "order.dailyprincetonian.com",
+  "homepage": "https://order.dailyprincetonian.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
