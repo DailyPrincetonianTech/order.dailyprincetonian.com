@@ -2,6 +2,7 @@ import React from 'react';
 import tote from '../../img/tote.png';
 import crewneck from '../../img/crewneck.png';
 import styles from './main.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Main() {
     return (
@@ -27,6 +28,9 @@ export default function Main() {
                         Princetonian nameplate that was introduced on May 11th, 1901.
                         At the time, a copy of the print paper cost three cents.
                     </p>
+                    <div className="d-grid col-8 col-md-4 mx-auto">
+                        <Link to="/gear" className="btn btn-dark text-uppercase fs-5">Order Now</Link>
+                    </div>
                 </div>
             </div>
         </div>
