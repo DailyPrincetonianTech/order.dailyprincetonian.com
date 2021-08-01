@@ -32,16 +32,16 @@ export default function GearItem(props: GearItemProps) {
                             <p>${price + shipping} USD</p>
                             <PayPalButton
                                 amount={price + shipping}
-                                options={{
-                                    clientId: "AeiJZG5XN-aJrlY7i94_IPWTQkzNwQze_KPb-5uNuvp4Lrh4SwAn4BwqYGFOmPg7TTN8NXf-K51_Qwqc",
-                                    currency: "USD",
-                                }}
                                 style={{
                                     shape: 'rect',
                                     color: 'silver',
                                     layout: 'vertical',
                                     label: 'paypal',
-                                }} />
+                                }}
+                                onError={(error: any) => {
+                                    console.log(error);
+                                }}
+                            />
                         </div>
                     </div>
                 </div>

@@ -22,10 +22,10 @@ export default function Gear() {
             </div>
             <div className="row">
                 <div className="col-12 col-lg-6">
-                    <GearItem name="1901 Crewneck" slug="crewneck" image={crewneck} price={24} shipping={3} />
+                    <GearItem name="1901 Crewneck" slug={"crewneck"} image={crewneck} price={24} shipping={3} />
                 </div>
                 <div className="col-12 col-lg-6">
-                    <GearItem name="1901 Tote" slug="tote" image={tote} price={14} shipping={3} />
+                    <GearItem name="1901 Tote" slug={"tote"} image={tote} price={14} shipping={3} />
                 </div>
             </div>
         </div>
