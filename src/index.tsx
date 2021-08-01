@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
 import App from './App';
+import './css/fonts.css';
+import './css/index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
