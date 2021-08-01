@@ -9,7 +9,7 @@ export default function Main() {
         <div className={styles.main + " container-fluid pt-3 pt-md-5 px-2 px-md-5"}>
             <div className="row">
                 <div className="col-12 col-md-6">
-                    <div className="row">
+                    <div className="row d-flex align-items-center">
                         <div className="col-12 col-md-6">
                             <img src={crewneck} alt="Crewneck" className="img-fluid" />
                         </div>
