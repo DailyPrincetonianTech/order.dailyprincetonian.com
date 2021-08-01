@@ -6,6 +6,7 @@ import {
     Switch
 } from 'react-router-dom';
 import Main from './components/main/Main';
+import Gear from './components/gear/Gear';
 
 function App() {
     return (
@@ -13,7 +14,7 @@ function App() {
             <Navbar />
             <Switch>
                 <Route exact path="/" component={Main} />
-                <Route path="/gear" component={() => <h1>Gear</h1>} />
+                <Route path="/gear" component={Gear} />
             </Switch>
         </Router>
     );

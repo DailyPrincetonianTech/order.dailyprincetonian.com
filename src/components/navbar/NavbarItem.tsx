@@ -6,9 +6,10 @@ interface NavbarItemProps {
 }
 
 export default function NavbarItem(props: NavbarItemProps) {
+    const { href, text } = props;
     return (
         <li className="nav-item">
-            <a href={props.href} className="nav-link text-dark py-1 text-uppercase">{props.text}</a>
+            <a href={href} className="nav-link text-dark py-1 text-uppercase">{text}</a>
         </li>
     );
 }

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function Main() {
     return (
-        <div className={styles.main + " container-fluid d-flex pt-3 pt-md-5 px-2 px-md-5"}>
+        <div className={styles.main + " container-fluid pt-3 pt-md-5 px-2 px-md-5"}>
             <div className="row">
                 <div className="col-12 col-md-6">
                     <div className="row">
