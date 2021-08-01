@@ -1,0 +1,16 @@
+@import './fonts.css';
+
+html {
+    background-color: #f0ebe8;
+    color: #343434;
+    font-family: D-DIN;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
