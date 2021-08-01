@@ -39,6 +39,7 @@ export default function GearItem(props: GearItemProps) {
                         </div>
                         <div className="modal-body" id={`${slug}ModalBody`}>
                             <p>${price + shipping} USD</p>
+                            <p>{description}</p>
                             <PayPalButton
                                 amount={price + shipping}
                                 style={{
