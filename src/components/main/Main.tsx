@@ -1,10 +1,11 @@
 import React from 'react';
 import tote from '../../img/tote.png';
 import crewneck from '../../img/crewneck.png';
+import styles from './main.module.css';
 
 export default function Main() {
     return (
-        <div className="container-fluid d-flex">
+        <div className={styles.main + " container-fluid d-flex pt-3"}>
             <div className="row">
                 <div className="col-12 col-md-6">
                     <div className="row">
@@ -16,7 +17,7 @@ export default function Main() {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-6 align-self-center">
+                <div className="col-12 col-md-6 align-self-center order-first order-md-1">
                     <h1 className="text-center">
                         1901 NAMEPLATE EDITION CREWNECK AND TOTE
                     </h1>
