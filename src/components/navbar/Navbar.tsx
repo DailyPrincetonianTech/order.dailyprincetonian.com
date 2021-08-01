@@ -1,5 +1,4 @@
 import React from "react";
-import banner from "./banner.png";
 import bannerTransparent from "./banner-transparent.png";
 import "./navbar.css";
 
