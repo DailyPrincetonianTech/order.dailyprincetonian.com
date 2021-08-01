@@ -20,12 +20,12 @@ export default function GearItem(props: GearItemProps) {
             <p>{name}</p>
             <p>${price} + ${shipping} shipping</p>
             <p>{description}</p>
-            <div className="d-grid col-7 col-md-3 mx-auto">
+            <div className="d-grid gap-2 col-7 col-md-3 mx-auto">
                 <button type="button" className="btn btn-dark text-uppercase" data-bs-toggle="modal" data-bs-target={`#${slug}Modal`}>
                     Order Now
                 </button>
-                {buttonText !== "" &&
-                    <a type="button" className="btn btn-primary text-uppercase text-nowrap" href={buttonHref}>
+                {buttonText !== undefined &&
+                    <a role="button" className="btn btn-secondary text-uppercase text-nowrap" href={buttonHref}>
                         {buttonText}
                     </a>
                 }
