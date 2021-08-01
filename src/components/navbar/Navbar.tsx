@@ -6,23 +6,18 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-muted sticky-top pb-2 border-bottom border-dark">
-            <div className="container-fluid d-flex align-items-center">
-                <Link className="navbar-brand" to="/">
+            <div className="container-fluid d-flex align-items-center py-md-2 px-md-5">
+                <Link className="navbar-brand mx-auto mx-md-0" to="/">
                     <img src={bannerTransparent} alt="banner" className="banner" />
                 </Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navToggle" aria-controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navToggle">
-                    <ul className="navbar-nav ms-auto">
-                        <li className="nav-item">
-                            <a href="https://subscribe.dailyprincetonian.com/" className="nav-link text-dark">SUBSCRIBE TO NEWSLETTER</a>
-                        </li>
-                        <li className="nav-item">
-                            <a href="https://www.dailyprincetonian.com/" className="nav-link text-dark">READ THE 'PRINCE'</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul className="navbar-nav mx-auto mx-md-0 ms-md-auto">
+                    <li className="nav-item">
+                        <a href="https://subscribe.dailyprincetonian.com/" className="nav-link text-dark">SUBSCRIBE TO NEWSLETTER</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="https://www.dailyprincetonian.com/" className="nav-link text-dark">READ THE 'PRINCE'</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     )
