@@ -24,7 +24,7 @@ export default function GearItem(props: GearItemProps) {
                 <button type="button" className="btn btn-dark text-uppercase" data-bs-toggle="modal" data-bs-target={`#${slug}Modal`}>
                     Order Now
                 </button>
-                {buttonText !== undefined &&
+                {buttonText !== undefined && buttonHref !== undefined &&
                     <a role="button" className="btn btn-secondary text-uppercase text-nowrap" href={buttonHref}target="_blank" rel="noopener noreferrer">
                         {buttonText}
                     </a>
