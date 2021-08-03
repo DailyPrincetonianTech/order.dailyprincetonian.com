@@ -51,6 +51,20 @@ export default function GearItem(props: GearItemProps) {
                                 onError={(error: any) => {
                                     console.log(error);
                                 }}
+                                options={{
+                                    clientId: "AeiJZG5XN-aJrlY7i94_IPWTQkzNwQze_KPb-5uNuvp4Lrh4SwAn4BwqYGFOmPg7TTN8NXf-K51_QwqcODUCTION_CLIENT_ID",
+                                    currency: "USD",
+                                }}
+                                onSuccess={(details: any, data: any) => {
+                                    alert("Transaction successfully completed by " + details.payer.name.given_name + ". Please, close the PayPal modal" + (name === "1901 Crewneck" ? " and submit your shirt size using the \"SELECT SIZE\" button" : "") + ".");
+                                }}
+                                onApprove={(data: any, action: any) => {
+                                    // Capture the funds from the transaction
+                                    return action.order.capture().then(function(details: any) {
+                                      // Show a success message to your buyer
+                                      console.log("Transaction completed by " + details.payer.name.given_name);
+                                    });
+                                }}
                             />
                         </div>
                     </div>
