@@ -6,7 +6,7 @@ interface GearItemProps {
     slug: string;
     image: string;
     price: number;
-    shipping: number;
+    shipping?: number;
     description?: string;
     buttonText?: string;
     buttonHref?: string;
@@ -18,7 +18,7 @@ export default function GearItem(props: GearItemProps) {
         <div>
             <img src={image} alt={name} className="img-fluid" style={{ maxHeight: 600 }} />
             <p>{name}</p>
-            <p>${price} + ${shipping} shipping</p>
+            <p>${price}{ shipping && " + $" + shipping + " shipping"}</p>
             <p>{description}</p>
             <div className="d-grid gap-2 col-7 col-md-3 mx-auto">
                 <button type="button" className="btn btn-dark text-uppercase" data-bs-toggle="modal" data-bs-target={`#${slug}Modal`}>
@@ -38,10 +38,10 @@ export default function GearItem(props: GearItemProps) {
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
                         </div>
                         <div className="modal-body" id={`${slug}ModalBody`}>
-                            <p>${price + shipping} USD</p>
+                            <p>${price + (shipping ? shipping : 0)} USD</p>
                             <p>{description}</p>
                             <PayPalButton
-                                amount={price + shipping}
+                                amount={price + (shipping ? shipping : 0)}
                                 style={{
                                     shape: 'rect',
                                     color: 'silver',
