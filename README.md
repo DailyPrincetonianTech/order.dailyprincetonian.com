@@ -1,3 +1,8 @@
+# staff.dailyprincetonian.com
+
+This branch is deployed to [staff.dailyprincetonian.com](https://staff.dailyprincetonian.com). Do not delete this branch!!
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
