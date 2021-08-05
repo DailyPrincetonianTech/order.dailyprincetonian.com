@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'D-DIN Exp';
-    src: url('./fonts/D-DINExp.woff2') format('woff2'),
-        url('./fonts/D-DINExp.woff') format('woff');
+    src: url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DINExp.woff2') format('woff2'),
+        url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DINExp.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'D-DIN Condensed';
-    src: url('./fonts/D-DINCondensed-Bold.woff2') format('woff2'),
-        url('./fonts/D-DINCondensed-Bold.woff') format('woff');
+    src: url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DINCondensed-Bold.woff2') format('woff2'),
+        url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DINCondensed-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'D-DIN Condensed';
-    src: url('./fonts/D-DINCondensed.woff2') format('woff2'),
-        url('./fonts/D-DINCondensed.woff') format('woff');
+    src: url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DINCondensed.woff2') format('woff2'),
+        url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DINCondensed.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'D-DIN';
-    src: url('./fonts/D-DIN-Italic.woff2') format('woff2'),
-        url('./fonts/D-DIN-Italic.woff') format('woff');
+    src: url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DIN-Italic.woff2') format('woff2'),
+        url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DIN-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'D-DIN Exp';
-    src: url('./fonts/D-DINExp-Bold.woff2') format('woff2'),
-        url('./fonts/D-DINExp-Bold.woff') format('woff');
+    src: url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DINExp-Bold.woff2') format('woff2'),
+        url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DINExp-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: 'D-DIN';
-    src: url('./fonts/D-DIN.woff2') format('woff2'),
-        url('./fonts/D-DIN.woff') format('woff');
+    src: url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DIN.woff2') format('woff2'),
+        url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DIN.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -54,8 +54,8 @@
 
 @font-face {
     font-family: 'D-DIN';
-    src: url('./fonts/D-DIN-Bold.woff2') format('woff2'),
-        url('./fonts/D-DIN-Bold.woff') format('woff');
+    src: url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DIN-Bold.woff2') format('woff2'),
+        url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DIN-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -63,8 +63,8 @@
 
 @font-face {
     font-family: 'D-DIN Exp';
-    src: url('./fonts/D-DINExp-Italic.woff2') format('woff2'),
-        url('./fonts/D-DINExp-Italic.woff') format('woff');
+    src: url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DINExp-Italic.woff2') format('woff2'),
+        url('https://prince-web-assets.s3.amazonaws.com/common/fonts/D-DIN/D-DINExp-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
