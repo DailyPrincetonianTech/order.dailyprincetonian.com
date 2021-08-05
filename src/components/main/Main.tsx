@@ -4,15 +4,39 @@ import { Link } from 'react-router-dom';
 
 export default function Main() {
     return (
-        <div className={styles.main + " container-fluid pt-3 pt-md-5 px-2 px-md-5"}>
+        <div className={styles.main + " container-fluid d-grid gap-3 pt-3"}>
+            <div className="row pb-3">
+                <div className="col-12 col-md-6">
+                    <div className="row d-flex align-items-center">
+                        <div className="col-12">
+                            <img src="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/blair-poster.png"
+                                alt="Blair Poster" className="img-fluid" width="75%" />
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-6 align-self-center order-first order-md-1">
+                    <h4 className={styles.textOrange + " text-center text-uppercase fw-bold"}>
+                        Blair Arch Poster
+                    </h4>
+                    <p className="fs-5">
+                        Accepting orders online and on campus until August 30. Preorder online today and receive a 20% discount.
+                        Only available for on campus pickup-- no off-campus delivery.
+                    </p>
+                    <div className="d-grid col-8 col-md-4 mx-auto pb-3 pb-md-auto">
+                        <Link to="/poster" className="btn btn-dark text-uppercase fs-5">Order Now</Link>
+                    </div>
+                </div>
+            </div>
             <div className="row">
                 <div className="col-12 col-md-6">
                     <div className="row d-flex align-items-center">
                         <div className="col-12 col-md-6">
-                            <img src="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/crewneck.png" alt="Crewneck" className="img-fluid" />
+                            <img src="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/crewneck.png"
+                                alt="Crewneck" className="img-fluid" />
                         </div>
                         <div className="col-12 col-md-6">
-                            <img src="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/tote.png" alt="Tote" className="img-fluid" />
+                            <img src="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/tote.png"
+                                alt="Tote" className="img-fluid" />
                         </div>
                     </div>
                 </div>
