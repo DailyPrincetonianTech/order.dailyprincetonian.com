@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './gear.module.css';
 import GearItem from './GearItem';
-import crewneck from '../../img/crewneck.png';
-import tote from '../../img/tote.png';
 
 export default function Gear() {
     return (
@@ -22,12 +20,12 @@ export default function Gear() {
             </div>
             <div className="row">
                 <div className="col-12 col-lg-6">
-                    <GearItem name="1901 Crewneck" slug={"crewneck"} image={crewneck} price={24} shipping={3}
+                    <GearItem name="1901 Crewneck" slug={"crewneck"} image="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/crewneck.png" price={24} shipping={3}
                         description={"Be sure to fill out the Google Form below to select your crewneck size!"}
-                        buttonText={"Select Size"} buttonHref={"https://docs.google.com/forms/d/e/1FAIpQLSdy8LuRg8KrGNY6I-ZEfS2MlWFnZE8eKOoGlcGrmV3cTlRkjA/viewform"}/>
+                        buttonText={"Select Size"} buttonHref="https://docs.google.com/forms/d/e/1FAIpQLSdy8LuRg8KrGNY6I-ZEfS2MlWFnZE8eKOoGlcGrmV3cTlRkjA/viewform"/>
                 </div>
                 <div className="col-12 col-lg-6">
-                    <GearItem name="1901 Tote" slug={"tote"} image={tote} price={14} shipping={3} />
+                    <GearItem name="1901 Tote" slug={"tote"} image="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/tote.png" price={14} shipping={3} />
                 </div>
             </div>
         </div>
