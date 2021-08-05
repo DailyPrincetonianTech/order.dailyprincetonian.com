@@ -1,6 +1,4 @@
 import React from 'react';
-import tote from '../../img/tote.png';
-import crewneck from '../../img/crewneck.png';
 import styles from './main.module.css';
 import { Link } from 'react-router-dom';
 
@@ -11,10 +9,10 @@ export default function Main() {
                 <div className="col-12 col-md-6">
                     <div className="row d-flex align-items-center">
                         <div className="col-12 col-md-6">
-                            <img src={crewneck} alt="Crewneck" className="img-fluid" />
+                            <img src="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/crewneck.png" alt="Crewneck" className="img-fluid" />
                         </div>
                         <div className="col-12 col-md-6">
-                            <img src={tote} alt="Tote" className="img-fluid" />
+                            <img src="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/tote.png" alt="Tote" className="img-fluid" />
                         </div>
                     </div>
                 </div>
