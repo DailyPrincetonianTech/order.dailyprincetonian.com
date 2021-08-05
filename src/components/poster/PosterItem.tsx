@@ -1,7 +1,7 @@
 import React from 'react';
 import { PayPalButton } from "react-paypal-button-v2";
 
-interface GearItemProps {
+interface PosterItemProps {
     name: string;
     slug: string;
     image: string;
@@ -12,11 +12,11 @@ interface GearItemProps {
     buttonHref?: string;
 }
 
-export default function GearItem(props: GearItemProps) {
+export default function PosterItem(props: PosterItemProps) {
     const { name, slug, image, price, shipping, description, buttonText, buttonHref } = props;
     return (
         <div>
-            <img src={image} alt={name} className="img-fluid" style={{ maxHeight: 600 }} />
+            <img src={image} alt={name} className="img-fluid pb-1" style={{ maxHeight: 600 }} />
             <p>{name}</p>
             <p>${price}{ shipping && " + $" + shipping + " shipping"}</p>
             <p>{description}</p>
