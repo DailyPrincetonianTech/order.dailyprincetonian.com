@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Main() {
     return (
-        <div className={styles.main + " container-fluid d-grid gap-3 pt-3"}>
+        <div className={styles.main + " container-fluid d-grid gap-3 pt-3 px-3"}>
             <div className="row pb-3">
                 <div className="col-12 col-md-6">
                     <div className="row d-flex align-items-center">

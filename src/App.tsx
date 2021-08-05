@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import Main from './components/main/Main';
 import Gear from './components/gear/Gear';
+import Poster from './components/poster/Poster';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Main} />
                 <Route path="/gear" component={Gear} />
+                <Route path="/poster" component={Poster} />
             </Switch>
         </Router>
     );
