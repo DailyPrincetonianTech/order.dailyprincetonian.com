@@ -18,7 +18,11 @@ export default function Gear() {
             </div>
             <div className="row pb-5">
                 <div className="col-12">
+<<<<<<< HEAD
                     <PosterItem name="Blair Arch Poster" slug={"poster"} image="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/blair-poster.png" price={14.99}
+=======
+                    <PosterItem name="Blair Arch Poster" slug={"poster"} image="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/blair-poster.png" price={14.99}
+>>>>>>> cdn
                         description={"20% Discount - $14.99. 24\"x18\" poster. Make sure to fill out the google form below after ordering."}
                         buttonText={"Order Form"} buttonHref="https://docs.google.com/forms/d/e/1FAIpQLSd1R0JBwucIBlDMXyKM7V51RglO5xXEds0PPr4swOpNBkbeUQ/viewform" />
                 </div>
