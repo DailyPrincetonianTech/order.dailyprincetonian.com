@@ -20,12 +20,12 @@ export default function Gear() {
             </div>
             <div className="row">
                 <div className="col-12 col-lg-6">
-                    <GearItem name="1901 Crewneck" slug={"crewneck"} image="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/crewneck.png" price={12}
+                    <GearItem name="1901 Crewneck" slug={"crewneck"} image="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/crewneck.png" price={24} shipping={3}
                         description={"Be sure to fill out the Google Form below to select your crewneck size!"}
                         buttonText={"Select Size"} buttonHref="https://docs.google.com/forms/d/e/1FAIpQLSdy8LuRg8KrGNY6I-ZEfS2MlWFnZE8eKOoGlcGrmV3cTlRkjA/viewform"/>
                 </div>
                 <div className="col-12 col-lg-6">
-                    <GearItem name="1901 Tote" slug={"tote"} image="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/tote.png" price={6} />
+                    <GearItem name="1901 Tote" slug={"tote"} image="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/tote.png" price={14} shipping={3} />
                 </div>
             </div>
         </div>
