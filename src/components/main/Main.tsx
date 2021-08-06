@@ -9,7 +9,7 @@ export default function Main() {
                 <div className="col-12 col-md-6">
                     <div className="row d-flex align-items-center">
                         <div className="col-12">
-                            <img src="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/blair-poster.png"
+                            <img src="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/blair-poster.png"
                                 alt="Blair Poster" className="img-fluid" width="75%" />
                         </div>
                     </div>
@@ -31,11 +31,11 @@ export default function Main() {
                 <div className="col-12 col-md-6">
                     <div className="row d-flex align-items-center">
                         <div className="col-12 col-md-6">
-                            <img src="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/crewneck.png"
+                            <img src="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/crewneck.png"
                                 alt="Crewneck" className="img-fluid" />
                         </div>
                         <div className="col-12 col-md-6">
-                            <img src="https://prince-web-assets.s3.amazonaws.com/order.dailyprincetonian.com/tote.png"
+                            <img src="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/tote.png"
                                 alt="Tote" className="img-fluid" />
                         </div>
                     </div>
