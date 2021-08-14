@@ -13,7 +13,7 @@ interface GearItemProps {
 }
 
 export default function GearItem(props: GearItemProps) {
-    const { name, slug, image, price, shipping, description, buttonText, buttonHref } = props;
+    const { name, slug, image, price, shipping, description } = props;
     return (
         <div>
             <img src={image} alt={name} className="img-fluid" style={{ maxHeight: 600 }} />
@@ -21,7 +21,7 @@ export default function GearItem(props: GearItemProps) {
             <p>${price}{ shipping && " + $" + shipping + " shipping"}</p>
             <p>{description}</p>
             <div className="d-grid gap-2 col-7 col-md-3 mx-auto">
-                <button type="button" className="btn btn-secondary text-uppercase">
+                <button type="button" className="btn btn-secondary disabled text-uppercase">
                     Closed
                 </button>                
             </div>
