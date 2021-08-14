@@ -51,8 +51,7 @@ export default function Main() {
                         At the time, a copy of the print paper cost three cents.
                     </p>
                     <div className="d-grid col-8 col-md-4 mx-auto">
-                        <a role="button" className="btn btn-secondary text-uppercase fs-5"  target="_blank" rel="noopener noreferrer">Closed</a>
-                        
+                        <Link to="/gear" className="btn btn-dark text-uppercase fs-5">Order Now</Link>
                     </div>
                 </div>
             </div>
