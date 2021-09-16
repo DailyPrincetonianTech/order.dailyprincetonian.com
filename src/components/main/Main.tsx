@@ -23,7 +23,7 @@ export default function Main() {
                         Only available for on campus pickup-- no off-campus delivery.
                     </p>
                     <div className="d-grid col-8 col-md-4 mx-auto pb-3 pb-md-auto">
-                        <Link to="/poster" className="btn btn-dark text-uppercase fs-5">Order Now</Link>
+                        <Link to="/poster" className="btn btn-dark disabled text-uppercase fs-5">Closed</Link>
                     </div>
                 </div>
             </div>

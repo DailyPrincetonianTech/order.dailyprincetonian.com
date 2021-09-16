@@ -21,8 +21,8 @@ export default function PosterItem(props: PosterItemProps) {
             <p>${price}{ shipping && " + $" + shipping + " shipping"}</p>
             <p>{description}</p>
             <div className="d-grid gap-2 col-7 col-md-3 mx-auto">
-                <button type="button" className="btn btn-dark text-uppercase" data-bs-toggle="modal" data-bs-target={`#${slug}Modal`}>
-                    Order Now
+                <button type="button" className="btn btn-dark disabled text-uppercase" data-bs-toggle="modal" data-bs-target={`#${slug}Modal`}>
+                    Closed
                 </button>
                 {buttonText !== undefined && buttonHref !== undefined &&
                     <a role="button" className="btn btn-secondary text-uppercase text-nowrap" href={buttonHref}target="_blank" rel="noopener noreferrer">
