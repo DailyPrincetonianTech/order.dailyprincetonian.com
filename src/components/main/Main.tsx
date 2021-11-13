@@ -14,7 +14,7 @@ export default function Main() {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-6 align-self-center order-first order-md-1">
+                <div className="col-12 col-md-6 align-self-center">
                     <h4 className={styles.textOrange + " text-center text-uppercase fw-bold"}>
                         Framed Princeton Football Bonfire Daily Princetonian Interest Form
                     </h4>
