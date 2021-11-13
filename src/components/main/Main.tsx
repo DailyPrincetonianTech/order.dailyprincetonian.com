@@ -18,16 +18,16 @@ export default function Main() {
                     <h4 className={styles.textOrange + " text-center text-uppercase fw-bold"}>
                         Framed Princeton Football Bonfire Daily Princetonian Interest Form
                     </h4>
-                    <p className="fs-6">
+                    <p className={styles.responsiveText}>
                         Celebrate Princeton Football’s victory over Harvard and Yale this season with a framed front page of the Daily Princetonian featuring the bonfire and Princeton Football Team! In keeping with ‘Prince’ tradition, we are excited to offer this special piece of history to Princeton Football players, staff, fans, and alumni.  Please see a sample on the left (this is NOT the final/official product)
                     </p>
-                    <p className="fs-6">
+                    <p className={styles.responsiveText}>
                         Sign up here to receive more information!
                     </p>
-                    <p className="fs-6">
+                    <p className={styles.responsiveText}>
                         The framed front page will display the Daily Princetonian’s coverage of bonfire and likely cost between $75-100 to cover printing and framing expenses.
                     </p>
-                    <p className="fs-6">
+                    <p className={styles.responsiveText}>
                         We plan to distribute the frames around the end of November/early December (making this the perfect the Holiday gift too!).
                         Please email <a href="mailto:john@dailyprincetonian.com">john@dailyprincetonian.com</a> if you have any questions or concerns.
                     </p>
