@@ -9,7 +9,7 @@ export default function Main() {
                 <div className="col-12 col-md-6">
                     <div className="row d-flex align-items-center">
                         <div className="col-12">
-                            <img src="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/framed_front_page.jpg"
+                            <img src="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/framed-front-page.jpg"
                                 alt="Blair Poster" className="img-fluid" width="75%" />
                         </div>
                     </div>
