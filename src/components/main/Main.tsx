@@ -78,7 +78,7 @@ export default function Main() {
                     <p className="fs-5">
                         Until supplies last, the ‘Prince’ will be accepting orders for our
                         Vol.1 No.4 Long Sleeve. The back design dates back to The Daily
-                        Princetonian's 4th earliest paper copy, which was published on October 5, 1876.
+                        Princetonian's 4th earliest paper copy, which was published on October 5, 1876. Only available for on campus pickup starting May 15th.
                     </p>
                     <div className="d-grid col-8 col-md-4 mx-auto">
                     <button className="btn btn-secondary disabled text-uppercase fs-5">Closed</button>
