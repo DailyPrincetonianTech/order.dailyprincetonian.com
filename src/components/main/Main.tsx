@@ -10,15 +10,13 @@ export default function Main() {
                     <div className="row d-flex align-items-center">
                     </div>
                 </div>
-                <div className = {styles.textOrange+ " text-center text-uppercase fw-bold"}>
-                    OUR SPRING 2022 COLLECTION
-                </div>
+                
             </div>
             <div className="row pb-2">
                 <div className="col-12 col-md-6">
                     <div className="row d-flex align-items-center">
                         <div className="col-12">
-                            <img src="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/blair-poster.png"
+                            <img src="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/tote-bag.png"
                                 alt="Blair Poster" className="img-fluid" width="75%" />
                         </div>
                     </div>
@@ -32,7 +30,7 @@ export default function Main() {
                         Only available for on campus pickup-- no off-campus delivery.
                     </p>
                     <div className="d-grid col-8 col-md-4 mx-auto pb-3 pb-md-auto">
-                        <Link to="/poster" className="btn btn-dark disabled text-uppercase fs-5">Closed</Link>
+                        <Link to="/poster" className="btn btn-dark text-uppercase fs-5">Order Now</Link>
                     </div>
                 </div>
             </div>
@@ -40,8 +38,10 @@ export default function Main() {
                 <div className="col-12 col-md-6">
                     <div className="row d-flex align-items-center">
                         <div className="col-12">
-                            <img src="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/blair-poster.png"
-                                alt="Blair Poster" className="img-fluid" width="75%" />
+                            <img src="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/pin-prince-tiger.png"
+                                alt="Blair Poster" className="img-fluid" width="38.3%" />
+                            <img src="https://assets.dailyprincetonian.com/order.dailyprincetonian.com/pin-newspaper.png"
+                                alt="Blair Poster" className="img-fluid" width="36%" />
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export default function Main() {
                         Only available for on campus pickup-- no off-campus delivery.
                     </p>
                     <div className="d-grid col-8 col-md-4 mx-auto pb-3 pb-md-auto">
-                        <Link to="/poster" className="btn btn-dark disabled text-uppercase fs-5">Closed</Link>
+                        <Link to="/poster" className="btn btn-dark text-uppercase fs-5">Order Now</Link>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@ export default function Main() {
                         Princetonian's 4th earliest paper copy, which was published on October 5, 1876. Only available for on campus pickup starting May 15th.
                     </p>
                     <div className="d-grid col-8 col-md-4 mx-auto">
-                    <button className="btn btn-secondary disabled text-uppercase fs-5">Closed</button>
+                    <button className="btn btn-dark text-uppercase fs-5" >Order Now</button>
                     </div>
                 </div>
             </div>
