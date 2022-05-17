@@ -6,3 +6,7 @@ nav {
 .banner {
   height: 7vh;
 }
+
+.alert {
+  font-size: 0.8rem;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from "./components/main/main.module.css";
 import Navbar from './components/navbar/Navbar';
 import {
     HashRouter as Router,
@@ -10,16 +11,16 @@ import Gear from './components/gear/Gear';
 import Poster from './components/poster/Poster';
 
 function App() {
-    return (
-        <Router>
-            <Navbar />
-            <Switch>
-                <Route exact path="/" component={Main} />
-                <Route path="/gear" component={Gear} />
-                <Route path="/poster" component={Poster} />
-            </Switch>
-        </Router>
-    );
+  return (
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route path="/gear" component={Gear} />
+        <Route path="/poster" component={Poster} />
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;

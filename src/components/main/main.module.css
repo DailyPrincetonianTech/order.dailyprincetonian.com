@@ -7,12 +7,12 @@
     color: #e87723 !important;
 }
 
-.responsiveText {
-    font-size: 0.85rem;
+p {
+    font-size: 0.9rem;
 }
 
 @media (min-width: 768px) {
-    .responsiveText {
-        font-size: 1rem;
+    p {
+        font-size: 1.125rem;
     }
 }
