@@ -8,5 +8,18 @@ nav {
 }
 
 .alert {
-  font-size: 0.8rem;
+  font-size: 0.55rem;
+}
+
+.nav-item {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .nav-item {
+    font-size: 1rem;
+  }
+  .alert {
+    font-size: 0.8rem;
+  }
 }

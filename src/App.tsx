@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from "./components/main/main.module.css";
 import Navbar from './components/navbar/Navbar';
 import {
     HashRouter as Router,

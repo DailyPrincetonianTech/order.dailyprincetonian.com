@@ -8,11 +8,25 @@
 }
 
 p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+}
+
+.customerButtons button {
+    font-size: 0.7rem;
+}
+
+.orderBtn {
+    font-size: 0.8rem;
 }
 
 @media (min-width: 768px) {
     p {
-        font-size: 1.125rem;
+        font-size: 1rem;
+    }
+    .customerButtons button {
+        font-size: 1rem;
+    }
+    .orderBtn {
+        font-size: 1rem;
     }
 }

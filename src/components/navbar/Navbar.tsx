@@ -6,15 +6,28 @@ import NavbarItem from "./NavbarItem";
 export default function Navbar() {
     return (
       <>
-        <div className="alert alert-warning" role="alert">
-          Check out our exclusive 2022 &lsquo;Prince&rsquo; gear! We have tote
-          bags, long-sleeves, and pins.
-          <br />
-          Stop by in-person at Princeton Reunions on May 21st at 48 University
-          Place Courtyard or anytime before May 26th to pick up your gear.
+        <div
+          className="alert alert-warning fade show d-flex justify-content-center mb-0"
+          role="alert"
+        >
+          <div className="d-inline-block">
+            Check out our exclusive 2022 &lsquo;Prince&rsquo; gear! We have tote
+            bags, long-sleeves, and pins.
+            <br />
+            Stop by in-person at Princeton Reunions on May 21st at 48 University
+            Place Courtyard or anytime before May 26th to pick up your gear.
+          </div>
+          <button
+            type="button"
+            className="btn close align-baseline"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-muted sticky-top pb-2 border-bottom border-dark">
-          <div className="container-fluid d-flex align-items-center py-md-2 px-md-5">
+        <nav className="navbar navbar-expand-lg navbar-light bg-muted sticky-top pb-1 border-bottom border-dark">
+          <div className="container-fluid d-flex align-items-center py-md-0 px-md-5">
             <Link className="navbar-brand mx-auto mx-md-0 pb-2" to="/">
               <img
                 src="https://assets.dailyprincetonian.com/common/banner-transparent.png"
