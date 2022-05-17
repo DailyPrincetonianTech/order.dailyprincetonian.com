@@ -12,7 +12,7 @@ export default function Gear() {
                     </h5>
                     <p className="fs-6">
                         Accepting orders online and on campus until August 30. Preorder online today and receive a 20% discount.
-                        Only available for on campus pickup-- no off-campus delivery.
+                        Only available for on campus pickup—no off-campus delivery.
                     </p>
                 </div>
             </div>

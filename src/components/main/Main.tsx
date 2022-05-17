@@ -67,7 +67,7 @@ export default function Main() {
           name="Prince Pins (Reunions Exclusive + Regular)"
           names={["Regular Pin", "Reunions Exclusive Pin"]}
           description={[
-            "To celebrate the return of reunions after 2 years, we are releasing an exclusive 2022 Reunions pin as well as our classic Daily Princetonian pins.",
+            "To celebrate the return of reunions after three years, we are releasing an exclusive 2022 Reunions pin as well as our classic Daily Princetonian pins.",
             "Accepting orders online and on campus until May 26th. Only available for on campus pickup until May 26th—no off-campus delivery.",
             isStudent
               ? "**You must be a current student (up to the Class of 2022)."
@@ -105,7 +105,7 @@ export default function Main() {
               <em>The Daily Princetonian's</em>,
               " 4th earliest paper copy, which was published on October 5th, 1876. It comes in small, medium, large, and extra-large.",
             ],
-            "Accepting orders online and on campus until May 26th. Only available for on campus pickup until May 26th -- no off-campus delivery.",
+            "Accepting orders online and on campus until May 26th. Only available for on campus pickup until May 26th—no off-campus delivery.",
             isStudent
               ? "**You must be a current student (up to the Class of 2022)."
               : "**Your contributions help subsidize the cost for current students. Thank you for your generosity.",
