@@ -17,18 +17,14 @@ export default function Main() {
             <button
               type="button"
               onClick={() => setIsStudent(true)}
-              className={
-                "btn btn-outline-dark " + (isStudent ? "active" : "")
-              }
+              className={"btn btn-outline-dark " + (isStudent ? "active" : "")}
             >
               A student
             </button>
             <button
               type="button"
               onClick={() => setIsStudent(false)}
-              className={
-                "btn btn-outline-dark " + (!isStudent ? "active" : "")
-              }
+              className={"btn btn-outline-dark " + (!isStudent ? "active" : "")}
             >
               An alum / non-student
             </button>
@@ -64,10 +60,11 @@ export default function Main() {
         <hr />
         <Item
           isStudent={isStudent}
-          name="Prince Pins (Reunions Exclusive + Regular)"
-          names={["Regular Pin", "Reunions Exclusive Pin"]}
+          // name="Prince Pins (Reunions Exclusive + Regular)"
+          name="Prince Pin"
+          // names={["Regular Pin", "Reunions Exclusive Pin"]}
           description={[
-            "To celebrate the return of reunions after three years, we are releasing an exclusive 2022 Reunions pin as well as our classic Daily Princetonian pins.",
+            // "To celebrate the return of reunions after three years, we are releasing an exclusive 2022 Reunions pin as well as our classic Daily Princetonian pins.",
             "Accepting orders online and on campus until May 26th. Only available for on campus pickup until May 26th—no off-campus delivery.",
             isStudent
               ? "**You must be a current student (up to the Class of 2022)."
@@ -76,22 +73,22 @@ export default function Main() {
           ]}
           imageURLs={[
             "https://assets.dailyprincetonian.com/order.dailyprincetonian.com/pin1.png",
-            "https://assets.dailyprincetonian.com/order.dailyprincetonian.com/pin2.png",
+            // "https://assets.dailyprincetonian.com/order.dailyprincetonian.com/pin2.png",
           ]}
-          caption="Top Pin: Classic 'Prince' Pin, Bottom Pin: 2022 Reunions Pin"
+          // caption="Top Pin: Classic 'Prince' Pin, Bottom Pin: 2022 Reunions Pin"
           prices={[
             { student: "$5", nonstudent: "$7.50" },
-            { student: "$7", nonstudent: "$10" },
+            // { student: "$7", nonstudent: "$10" },
           ]}
           buttonURLs={[
             {
               student: "https://buy.stripe.com/5kA5mBfpZ18s9P2eVo",
               nonstudent: "https://buy.stripe.com/7sI4ixgu37wQ0esaF7",
             },
-            {
-              student: "https://buy.stripe.com/5kAbKZfpZ5oIf9m28z",
-              nonstudent: "https://buy.stripe.com/bIY9CRb9J3gA1iw5kM",
-            },
+            // {
+            //   student: "https://buy.stripe.com/5kAbKZfpZ5oIf9m28z",
+            //   nonstudent: "https://buy.stripe.com/bIY9CRb9J3gA1iw5kM",
+            // },
           ]}
         />
         <hr />
