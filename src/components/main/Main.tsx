@@ -40,11 +40,11 @@ export default function Main() {
               <em>The Daily Princetonian's</em>,
               " 4th earliest paper copy, which was published on October 5th, 1876.",
             ],
-            "Accepting orders online and on campus until May 26th. Only available for on campus pickup until May 26th—no off-campus delivery.",
+            "Accepting orders online and on campus until Nov. 15th. Only available for on campus pickup until Nov. 15th—no off-campus delivery.",
             isStudent
-              ? "**You must be a current student (up to the Class of 2022)."
+              ? "**You must be a current student (up to the Class of 2023)."
               : "**Your contributions help subsidize the cost for current students. Thank you for your generosity.",
-            "A friendly reminder that items can only be picked up on-campus until May 26th.",
+            "A friendly reminder that items can only be picked up on-campus until Nov. 15th.",
           ]}
           imageURLs={[
             "https://assets.dailyprincetonian.com/order.dailyprincetonian.com/tote-bag.png",
@@ -65,11 +65,11 @@ export default function Main() {
           // names={["Regular Pin", "Reunions Exclusive Pin"]}
           description={[
             // "To celebrate the return of reunions after three years, we are releasing an exclusive 2022 Reunions pin as well as our classic Daily Princetonian pins.",
-            "Accepting orders online and on campus until May 26th. Only available for on campus pickup until May 26th—no off-campus delivery.",
+            "Accepting orders online and on campus until Nov. 15th. Only available for on campus pickup until Nov. 15th—no off-campus delivery.",
             isStudent
-              ? "**You must be a current student (up to the Class of 2022)."
+              ? "**You must be a current student (up to the Class of 2023)."
               : "**Your contributions help subsidize the cost for current students. Thank you for your generosity.",
-            "A friendly reminder that items can only be picked up on-campus until May 26th.",
+            "A friendly reminder that items can only be picked up on-campus until Nov. 15th.",
           ]}
           imageURLs={[
             "https://assets.dailyprincetonian.com/order.dailyprincetonian.com/pin1.png",
@@ -102,11 +102,11 @@ export default function Main() {
               <em>The Daily Princetonian's</em>,
               " 4th earliest paper copy, which was published on October 5th, 1876. It comes in small, medium, large, and extra-large.",
             ],
-            "Accepting orders online and on campus until May 26th. Only available for on campus pickup until May 26th—no off-campus delivery.",
+            "Accepting orders online and on campus until Nov. 15th. Only available for on campus pickup until Nov. 15th—no off-campus delivery.",
             isStudent
-              ? "**You must be a current student (up to the Class of 2022)."
+              ? "**You must be a current student (up to the Class of 2023)."
               : "**Your contributions help subsidize the cost for current students. Thank you for your generosity.",
-            "A friendly reminder that items can only be picked up on-campus until May 26th.",
+            "A friendly reminder that items can only be picked up on-campus until Nov. 15th.",
           ]}
           imageURLs={[
             "https://assets.dailyprincetonian.com/order.dailyprincetonian.com/long-sleeve-front.png",

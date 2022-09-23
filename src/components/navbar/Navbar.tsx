@@ -14,8 +14,8 @@ export default function Navbar() {
             Check out our exclusive 2022 &lsquo;Prince&rsquo; gear! We have tote
             bags, long-sleeves, and pins.
             <br />
-            Stop by in-person at Princeton Reunions on May 21st at 48 University
-            Place Courtyard or anytime before May 26th to pick up your gear.
+            Stop by the Daily Princetonian business office on September 25th, 
+            October 2nd, and October 9th from 5-7 p.m. to pick up your gear!
           </div>
           <button
             type="button"
