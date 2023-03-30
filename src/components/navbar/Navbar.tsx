@@ -11,11 +11,9 @@ export default function Navbar() {
           role="alert"
         >
           <div className="d-inline-block">
-            Check out our exclusive 2022 &lsquo;Prince&rsquo; gear! We have tote
-            bags, long-sleeves, and pins.
+          Check out our &lsquo;Prince&rsquo; gear! We have tote bags, long-sleeves, and pins. 
             <br />
-            Stop by the Daily Princetonian business office on September 25th, 
-            October 2nd, and October 9th from 5-7 p.m. to pick up your gear!
+            You can pick up gear on campus (delivery options to come out soon!)
           </div>
           <button
             type="button"
