@@ -40,7 +40,7 @@ export default function Main() {
               <em>The Daily Princetonian's</em>,
               " 4th earliest paper copy, which was published on October 5th, 1876.",
             ],
-            "Accepting orders online and on campus until Nov. 15th. Only available for on campus pickup until Nov. 15th—no off-campus delivery.",
+            "Accepting orders online and on campus until April 30th. Only available for on campus pickup until April 30th—no off-campus delivery.",
             isStudent
               ? "**You must be a current student (up to the Class of 2023)."
               : "**Your contributions help subsidize the cost for current students. Thank you for your generosity.",
@@ -58,40 +58,7 @@ export default function Main() {
           ]}
         />
         <hr />
-        <Item
-          isStudent={isStudent}
-          // name="Prince Pins (Reunions Exclusive + Regular)"
-          name="Prince Pin"
-          // names={["Regular Pin", "Reunions Exclusive Pin"]}
-          description={[
-            // "To celebrate the return of reunions after three years, we are releasing an exclusive 2022 Reunions pin as well as our classic Daily Princetonian pins.",
-            "Accepting orders online and on campus until Nov. 15th. Only available for on campus pickup until Nov. 15th—no off-campus delivery.",
-            isStudent
-              ? "**You must be a current student (up to the Class of 2023)."
-              : "**Your contributions help subsidize the cost for current students. Thank you for your generosity.",
-            "A friendly reminder that items can only be picked up on-campus until May 9th.",
-          ]}
-          imageURLs={[
-            "https://assets.dailyprincetonian.com/order.dailyprincetonian.com/pin1.png",
-            // "https://assets.dailyprincetonian.com/order.dailyprincetonian.com/pin2.png",
-          ]}
-          // caption="Top Pin: Classic 'Prince' Pin, Bottom Pin: 2022 Reunions Pin"
-          prices={[
-            { student: "$5", nonstudent: "$7.50" },
-            // { student: "$7", nonstudent: "$10" },
-          ]}
-          buttonURLs={[
-            {
-              student: "https://buy.stripe.com/5kA5mBfpZ18s9P2eVo",
-              nonstudent: "https://buy.stripe.com/7sI4ixgu37wQ0esaF7",
-            },
-            // {
-            //   student: "https://buy.stripe.com/5kAbKZfpZ5oIf9m28z",
-            //   nonstudent: "https://buy.stripe.com/bIY9CRb9J3gA1iw5kM",
-            // },
-          ]}
-        />
-        <hr />
+        
         <Item
           isStudent={isStudent}
           name="VOL.1 NO.4 LONG-SLEEVE"

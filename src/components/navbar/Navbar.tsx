@@ -11,7 +11,7 @@ export default function Navbar() {
           role="alert"
         >
           <div className="d-inline-block">
-          Check out our &lsquo;Prince&rsquo; gear! We have tote bags, long-sleeves, and pins. 
+          Check out our &lsquo;Prince&rsquo; gear! We have tote bags and long-sleeves. 
             <br />
             You can pick up gear on campus (delivery options to come out soon!)
           </div>
